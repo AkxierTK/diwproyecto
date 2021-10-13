@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+*{
+  margin:0px;  
+}
+body{
+    background-color: black;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family:'Evogria';
+    src: url('../webfonts/Evogria.otf');
+    margin-top: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em; 
+    margin-left: 0.5em;
+    color:white;
+}
+
+p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    margin:1em;
+    color:white;
+}
+input{
+    margin-left: 1.5em;
+}
+
+aside{
+    background-color: rgb(216, 132, 35);
+    color:black;
+}
+label{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    margin:1em;
+    color:white;
+}
+#lista{
+    color:white;
+}
+
+#footer{
+    background-color: grey;
+}
+
+#nav{
+    background-color: #a30303;
+}
+
+
+
