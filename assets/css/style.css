@@ -42,10 +42,41 @@ label{
 #footer{
     background-color: grey;
 }
-
-#nav{
-    background-color: #a30303;
+nav {
+    margin-top: 40px;
+    padding: 24px;
+    text-align: right;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  }
+#navegador{
+    background: #a30303;
+    padding-bottom: 1.9em;
 }
 
-
-
+.link-3 {
+    align-items: center;
+    transition: 0.4s;
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0 10px;
+    margin: 0 10px;
+  }
+  .link-3:hover {
+    background-color: black;
+    color: white;
+    padding: 20px 20px;
+  }
+.logo{
+    position:relative;
+    left: -60em;
+}
+.link-footer {
+    align-items: center;
+    transition: 0.4s;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0 10px;
+    margin: 0 10px;
+  }
