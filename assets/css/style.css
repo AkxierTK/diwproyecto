@@ -5,16 +5,59 @@
 body{
     background-color: black;
 }
-h1,h2,h3,h4,h5,h6{
+h1{ 
+    text-align: center;
     font-family:'Evogria';
     src: url('../webfonts/Evogria.otf');
+    font-size: 3em;
     margin-top: 1em;
     margin-right: 1em;
     margin-bottom: 1em; 
     margin-left: 0.5em;
     color:white;
 }
-
+h2{
+    font-family:'Evogria';
+    src: url('../webfonts/Evogria.otf');
+    font-size: 2em;
+    margin-top: 1em;
+    margin-right: 1em;
+    margin-bottom: 0.5em; 
+    margin-left: 0.5em;
+    color:white; 
+}
+h3{
+    font-family:'Evogria';
+    src: url('../webfonts/Evogria.otf');
+    font-size: 1.5em;
+    margin-top: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em; 
+    margin-left: 0.5em;
+    color:white;  
+}
+h4{
+    font-family:'Evogria';
+    src: url('../webfonts/Evogria.otf');
+    font-size: 1.5em;
+    margin-top: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em; 
+    margin-left: 0.5em;
+    color:white;  
+}
+cite{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    margin:1em;
+    color:white;
+}
+em{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    margin:1em;
+    color:white;
+}
 p{
     font-family: 'Oswald', sans-serif;
     font-size: 1.2em;
@@ -28,6 +71,10 @@ input{
 aside{
     background-color: rgb(216, 132, 35);
     color:black;
+    float: left;
+    margin: 1.5em;
+    width: 25%;
+    border-radius:5px;
 }
 label{
     font-family: 'Oswald', sans-serif;
@@ -35,6 +82,34 @@ label{
     margin:1em;
     color:white;
 }
+td{
+    color:white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+}
+th{
+    color:white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+}
+form{
+    border: red 5px solid;
+    background-color: grey;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+}
+input#color{
+    color:white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+  }
 #lista{
     color:white;
 }
@@ -54,6 +129,7 @@ nav {
 }
 
 .link-3 {
+    font-family: 'Oswald', sans-serif;
     align-items: center;
     transition: 0.4s;
     color: #ffffff;
@@ -69,14 +145,23 @@ nav {
   }
 .logo{
     position:relative;
-    left: -60em;
+    left: -59em;
 }
 .link-footer {
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+    left:-48em;
     align-items: center;
-    transition: 0.4s;
     color: black;
     font-size: 20px;
     text-decoration: none;
     padding: 0 10px;
     margin: 0 10px;
   }
+
+.imagen-footer{
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1px;
+    margin: 0 4px;
+}
