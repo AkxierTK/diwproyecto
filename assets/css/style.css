@@ -19,7 +19,7 @@ h1{
 h2{
     font-family:'Evogria';
     src: url('../webfonts/Evogria.otf');
-    font-size: 2em;
+    font-size: 2.5em;
     margin-top: 1em;
     margin-right: 1em;
     margin-bottom: 0.5em; 
@@ -67,14 +67,17 @@ p{
 input{
     margin-left: 1.5em;
 }
-
+.linkCompra{
+    color:rgb(216, 132, 35)
+}
 aside{
     background-color: rgb(216, 132, 35);
     color:black;
     float: left;
     margin: 1.5em;
-    width: 25%;
+    width: 22%;
     border-radius:5px;
+    
 }
 label{
     font-family: 'Oswald', sans-serif;
@@ -93,7 +96,7 @@ th{
     font-size: 1.5em;
 }
 form{
-    border: red 5px solid;
+    border: #a30303 5px solid;
     background-color: grey;
     width: 100%;
     max-width: 600px;
@@ -112,6 +115,18 @@ input#color{
   }
 #lista{
     color:white;
+}
+
+#H2Aside{
+    text-align: center;
+    font-family:'Evogria';
+    src: url('../webfonts/Evogria.otf');
+    font-size: 2.5em;
+    margin-top: 1em;
+    margin-right: 1em;
+    margin-bottom: 0.5em; 
+    margin-left: 0.5em;
+    color:white; 
 }
 
 #footer{
