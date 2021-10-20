@@ -3,7 +3,8 @@
   margin:0px;  
 }
 body{
-    background-color: black;
+    box-sizing: border-box;
+    background-color:black ;
 }
 h1{ 
     text-align: center;
@@ -39,7 +40,7 @@ h3{
 h4{
     font-family:'Evogria';
     src: url('../webfonts/Evogria.otf');
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin-top: 1em;
     margin-right: 1em;
     margin-bottom: 1em; 
@@ -108,6 +109,8 @@ form{
     font-family: 'Oswald', sans-serif;
     font-size: 1.5em;
 }
+
+
 input#color{
     color:white;
     font-family: 'Oswald', sans-serif;
@@ -131,22 +134,30 @@ input#color{
 
 #footer{
     background-color: grey;
+    bottom: 0px;
 }
 nav {
-    margin-top: 40px;
-    padding: 24px;
+    padding: 3px;
     text-align: right;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
   }
-#navegador{
+.navegador{
     background: #a30303;
-    padding-bottom: 1.9em;
+    top: 0px;
+}
+.menu{
+    height: 5px;
+}
+.footerS{
+    height: 230px;
 }
 
 .link-3 {
     font-family: 'Oswald', sans-serif;
     align-items: center;
     transition: 0.4s;
+    position:relative;
+    top: -0.20em;
     color: #ffffff;
     font-size: 20px;
     text-decoration: none;
@@ -154,13 +165,15 @@ nav {
     margin: 0 10px;
   }
   .link-3:hover {
-    background-color: black;
+    background-color: rgb(216, 132, 35);
     color: white;
-    padding: 20px 20px;
+    padding-top: 14px;
+    padding-bottom: 6px;
   }
 .logo{
     position:relative;
-    left: -59em;
+    left: -65em;
+    top: 0.50em;
 }
 .link-footer {
     font-family: 'Oswald', sans-serif;
@@ -179,4 +192,6 @@ nav {
     text-decoration: none;
     padding: 0 1px;
     margin: 0 4px;
+    position:relative;
+    top: 0.22em;
 }
