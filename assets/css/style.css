@@ -116,11 +116,15 @@ input#color{
     font-family: 'Oswald', sans-serif;
     font-size: 1.5em;
   }
-#lista{
+.lista{
     color:white;
+    list-style:none;
+    margin-left: -3em;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
 }
 
-#H2Aside{
+.H2Aside{
     text-align: center;
     font-family:'Evogria';
     src: url('../webfonts/Evogria.otf');
@@ -132,7 +136,7 @@ input#color{
     color:white; 
 }
 
-#footer{
+footer{
     background-color: grey;
     bottom: 0px;
 }
@@ -146,7 +150,7 @@ nav {
     top: 0px;
 }
 .menu{
-    height: 5px;
+    height: 15px;
 }
 .footerS{
     height: 230px;
@@ -194,4 +198,22 @@ nav {
     margin: 0 4px;
     position:relative;
     top: 0.22em;
+}
+
+.indexH2{
+    text-align: center;
+}
+.divPadreIndex{
+    text-align: center;
+}
+.cajaRoja{
+    background-color: #a30303;
+    padding: 10px;
+    margin: 10px;
+    height: 515px;
+    width: 775px;
+    border-radius:5px;
+    align-items: center;
+  /* IMPORTANTE */
+  display: inline-block;
 }
