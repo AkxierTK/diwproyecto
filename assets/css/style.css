@@ -6,6 +6,7 @@ body{
     box-sizing: border-box;
     background-color:black ;
 }
+
 h1{ 
     text-align: center;
     font-family:'Evogria';
@@ -141,13 +142,16 @@ footer{
     bottom: 0px;
 }
 nav {
-    padding: 3px;
+    
+    padding: 7px;
     text-align: right;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
   }
 .navegador{
+    height: 100%;
     background: #a30303;
     top: 0px;
+    width: 100%;
 }
 .menu{
     height: 15px;
@@ -161,7 +165,6 @@ nav {
     align-items: center;
     transition: 0.4s;
     position:relative;
-    top: -0.20em;
     color: #ffffff;
     font-size: 20px;
     text-decoration: none;
@@ -171,13 +174,13 @@ nav {
   .link-3:hover {
     background-color: rgb(216, 132, 35);
     color: white;
-    padding-top: 14px;
-    padding-bottom: 6px;
+    padding-top: 0.42%;
+    padding-bottom: 0.42%;
   }
 .logo{
-    position:relative;
-    left: -65em;
-    top: 0.50em;
+    position:absolute;
+    left:0%;
+    top:0.15%
 }
 .link-footer {
     font-family: 'Oswald', sans-serif;
@@ -207,13 +210,24 @@ nav {
     text-align: center;
 }
 .cajaRoja{
-    background-color: #a30303;
+  
     padding: 10px;
     margin: 10px;
-    height: 515px;
-    width: 775px;
-    border-radius:5px;
     align-items: center;
   /* IMPORTANTE */
   display: inline-block;
+  box-shadow: 10px 10px 124px 36px rgba(163,3,3,0.95);
+}
+
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.centrado{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
