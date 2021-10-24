@@ -5,6 +5,7 @@
 body{
     box-sizing: border-box;
     background-color:black ;
+    overflow-x:hidden;
 }
 
 h1{ 
@@ -137,12 +138,7 @@ input#color{
     color:white; 
 }
 
-footer{
-    background-color: grey;
-    bottom: 0px;
-}
 nav {
-    
     padding: 7px;
     text-align: right;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
@@ -156,8 +152,8 @@ nav {
 .menu{
     height: 15px;
 }
-.footerS{
-    height: 230px;
+.footers{
+    align-items: left;
 }
 
 .link-3 {
@@ -182,25 +178,33 @@ nav {
     left:0%;
     top:0.15%
 }
+.footerNav{
+    height: 100%;
+    background: grey;
+    top: 0px;
+    width: 100%;
+}
 .link-footer {
     font-family: 'Oswald', sans-serif;
-    position: relative;
-    left:-48em;
-    align-items: center;
+    align-items:center;
+    transition: 0.4s;
+    position:relative;
     color: black;
     font-size: 20px;
     text-decoration: none;
     padding: 0 10px;
     margin: 0 10px;
+    right: 65em
   }
 
 .imagen-footer{
     align-items: center;
     text-decoration: none;
-    padding: 0 1px;
+    padding: 0 2px;
     margin: 0 4px;
     position:relative;
     top: 0.22em;
+    right: 0.2em
 }
 
 .indexH2{
