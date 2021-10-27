@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+/*Etiquetas*/
 *{
   margin:0px;  
 }
@@ -11,7 +12,6 @@ body{
 h1{ 
     text-align: center;
     font-family:'Evogria';
-    src: url('../webfonts/Evogria.otf');
     font-size: 3em;
     margin-top: 1em;
     margin-right: 1em;
@@ -21,7 +21,6 @@ h1{
 }
 h2{
     font-family:'Evogria';
-    src: url('../webfonts/Evogria.otf');
     font-size: 2.5em;
     margin-top: 1em;
     margin-right: 1em;
@@ -31,7 +30,6 @@ h2{
 }
 h3{
     font-family:'Evogria';
-    src: url('../webfonts/Evogria.otf');
     font-size: 1.5em;
     margin-top: 1em;
     margin-right: 1em;
@@ -41,7 +39,6 @@ h3{
 }
 h4{
     font-family:'Evogria';
-    src: url('../webfonts/Evogria.otf');
     font-size: 1.3em;
     margin-top: 1em;
     margin-right: 1em;
@@ -49,6 +46,7 @@ h4{
     margin-left: 0.5em;
     color:white;  
 }
+
 cite{
     font-family: 'Oswald', sans-serif;
     font-size: 1.2em;
@@ -70,9 +68,7 @@ p{
 input{
     margin-left: 1.5em;
 }
-.linkCompra{
-    color:rgb(216, 132, 35)
-}
+
 aside{
     background-color: rgb(216, 132, 35);
     color:black;
@@ -81,6 +77,9 @@ aside{
     width: 22%;
     border-radius:5px;
     
+}
+aside> a:visited{
+    color: green;
 }
 label{
     font-family: 'Oswald', sans-serif;
@@ -111,21 +110,58 @@ form{
     font-family: 'Oswald', sans-serif;
     font-size: 1.5em;
 }
-
+nav {
+    padding: 7px;
+    text-align: right;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  }
 
 input#color{
     color:white;
     font-family: 'Oswald', sans-serif;
     font-size: 1.5em;
   }
+table{
+    border-collapse: collapse;
+    width: 100%;
+    caption-side: bottom;
+    position: relative;
+    font-family:'Evogria';
+    text-align: center;
+}
+table>caption{
+    color:white;    
+}
+
+tr:nth-child(odd){
+    background-color:rgb(216, 132, 35) ;
+}
+
+tr:nth-child(even){
+    background-color:gray ;
+}
+tr:first-child{
+    background-color: #a30303;
+    
+}
+@font-face { 
+    font-family: 'Evogria'; 
+    src: local('Evogria'), 
+        url("assets/webfonts/evogria-webfont.woff2") format('woff2'), 
+        url("assets/webfonts/evogria-webfont.woff") format('woff'), 
+        url("assets/webfonts/Evogria.otf") format('truetype');
+}
+/* Clases */
 .lista{
     color:white;
     list-style:none;
-    margin-left: -3em;
+    padding-left: -3em;
     font-family: 'Oswald', sans-serif;
     font-size: 1.5em;
 }
-
+.linkCompra{
+    color:rgb(216, 132, 35)
+}
 .H2Aside{
     text-align: center;
     font-family:'Evogria';
@@ -138,11 +174,6 @@ input#color{
     color:white; 
 }
 
-nav {
-    padding: 7px;
-    text-align: right;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
-  }
 .navegador{
     height: 100%;
     background: #a30303;
@@ -150,10 +181,11 @@ nav {
     width: 100%;
 }
 .menu{
-    height: 15px;
+    height: 20px;
 }
-.footers{
+.footerS{
     align-items: left;
+    height: 220px;
 }
 
 .link-3 {
@@ -194,9 +226,11 @@ nav {
     text-decoration: none;
     padding: 0 10px;
     margin: 0 10px;
-    right: 65em
+    right: 49em
   }
-
+.link-footer:active{
+    color:rgb(216, 132, 35) ;
+}
 .imagen-footer{
     align-items: center;
     text-decoration: none;
@@ -234,4 +268,10 @@ nav {
     top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.contenedorCentrado{
+    max-width: 100%;
+    width: 90%;
+    margin: 0 auto;
 }
