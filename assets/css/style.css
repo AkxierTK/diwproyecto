@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@font-face { 
+    font-family: 'Evogria'; 
+    src: local('Evogria'), 
+        url("assets/webfonts/evogria-webfont.woff2") format('woff2'), 
+        url("assets/webfonts/evogria-webfont.woff") format('woff'), 
+        url("assets/webfonts/Evogria.otf") format('truetype');
+}
 /*Etiquetas*/
 *{
   margin:0px;  
@@ -8,58 +15,39 @@ body{
     background-color:black ;
     overflow-x:hidden;
 }
+.bodyContacto{
+    background-image: url("ass");
+    background-image: url("../images/fondoContacto.jpg");
+}
 
-h1{ 
-    text-align: center;
+h1,h2,h3,h4,h5,h6{ 
     font-family:'Evogria';
-    font-size: 3em;
-    margin-top: 1em;
-    margin-right: 1em;
-    margin-bottom: 1em; 
-    margin-left: 0.5em;
     color:white;
+    text-align: center;
+}
+h1{
+    font-size: 3em;
 }
 h2{
-    font-family:'Evogria';
-    font-size: 2.5em;
-    margin-top: 1em;
-    margin-right: 1em;
-    margin-bottom: 0.5em; 
-    margin-left: 0.5em;
-    color:white; 
+    font-size: 2em;
 }
 h3{
-    font-family:'Evogria';
     font-size: 1.5em;
+}
+.tituloForm{
+    display: inline-flex;
+    background-color: #a30303;
     margin-top: 1em;
-    margin-right: 1em;
-    margin-bottom: 1em; 
-    margin-left: 0.5em;
-    color:white;  
+    position: relative;
+    top: 10%;
+    left: 50%;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    transform: translate(-50%, -50%);
+    margin-bottom: 0.1em;
+    border-radius: 20px;
 }
-h4{
-    font-family:'Evogria';
-    font-size: 1.3em;
-    margin-top: 1em;
-    margin-right: 1em;
-    margin-bottom: 1em; 
-    margin-left: 0.5em;
-    color:white;  
-}
-
-cite{
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.2em;
-    margin:1em;
-    color:white;
-}
-em{
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.2em;
-    margin:1em;
-    color:white;
-}
-p{
+cite,em,p{
     font-family: 'Oswald', sans-serif;
     font-size: 1.2em;
     margin:1em;
@@ -68,7 +56,7 @@ p{
 input{
     margin-left: 1.5em;
 }
-
+/*Aside*/
 aside{
     background-color: rgb(216, 132, 35);
     color:black;
@@ -81,34 +69,55 @@ aside{
 aside> a:visited{
     color: green;
 }
-label{
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.2em;
-    margin:1em;
-    color:white;
-}
-td{
+
+td,th{
     color:white;
     font-family: 'Oswald', sans-serif;
     font-size: 1.2em;
 }
-th{
-    color:white;
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.5em;
-}
+/*Formulario */
 form{
     border: #a30303 5px solid;
     background-color: grey;
-    width: 100%;
-    max-width: 600px;
+    padding: 60px;
+    max-width: 400px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Oswald', sans-serif;
+}
+form> textarea{
+    resize:none;
+}
+form button {
+	display: block;
+	background-color: #a30303;
+	padding: 5px 30px 5px 30px;
+    margin-bottom: 10px;
+	border: 0;
+	font-size: 1em; 
+	color: 	white;
+  font-family: "Evogria";
+}
+label{
+    font-family: "Evogria";
     font-size: 1.5em;
+    margin:0.7em;
+    color:white;
+    margin-bottom: 1em;
+    display: block;
+}
+input{
+    margin-bottom: 1em;
+}
+.bloqueCheck{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 0.8em;
+    vertical-align: middle;
+}
+
+
+.chechText{
+    font-size: 1.2em;
+    display: inline;
 }
 nav {
     padding: 7px;
@@ -144,13 +153,12 @@ tr:first-child{
     background-color: #a30303;
     
 }
-@font-face { 
-    font-family: 'Evogria'; 
-    src: local('Evogria'), 
-        url("assets/webfonts/evogria-webfont.woff2") format('woff2'), 
-        url("assets/webfonts/evogria-webfont.woff") format('woff'), 
-        url("assets/webfonts/Evogria.otf") format('truetype');
+td,th{
+    color:white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
 }
+
 /* Clases */
 .lista{
     color:white;
@@ -268,6 +276,18 @@ tr:first-child{
     top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.centradoN{
+    display: flex;
+    background-color: #a30303;
+    margin-top: 5em;
+    position: relative;
+    left: 50%;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    transform: translate(-50%, -50%);
+    margin-bottom: 0.1em;
+    border-radius: 20px;
 }
 
 .contenedorCentrado{
