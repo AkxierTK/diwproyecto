@@ -82,6 +82,7 @@ form{
     padding: 60px;
     max-width: 400px;
     margin: 0 auto;
+    margin-bottom: 3em;
 }
 form> textarea{
     resize:none;
@@ -191,10 +192,6 @@ td,th{
 .menu{
     height: 20px;
 }
-.footerS{
-    align-items: left;
-    height: 220px;
-}
 
 .link-3 {
     font-family: 'Oswald', sans-serif;
@@ -223,6 +220,8 @@ td,th{
     background: grey;
     top: 0px;
     width: 100%;
+    right: 0%;
+    display: inline-flex;
 }
 .link-footer {
     font-family: 'Oswald', sans-serif;
@@ -232,23 +231,23 @@ td,th{
     color: black;
     font-size: 20px;
     text-decoration: none;
-    padding: 0 10px;
+    padding: 0 12px;
     margin: 0 10px;
-    right: 49em
   }
-.link-footer:active{
-    color:rgb(216, 132, 35) ;
-}
-.imagen-footer{
-    align-items: center;
-    text-decoration: none;
-    padding: 0 2px;
-    margin: 0 4px;
-    position:relative;
-    top: 0.22em;
-    right: 0.2em
-}
-
+  
+  .link-footer:active{
+      color:rgb(216, 132, 35) ;
+    }
+    .imagen-footer{
+        align-items: center;
+        text-decoration: none;
+        padding: 0 2px;
+        margin: 0 4px;
+        display:inline-block;
+        top: 0.22em;
+        left: 100%;
+    }
+    
 .indexH2{
     text-align: center;
 }
@@ -276,9 +275,13 @@ td,th{
     top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: #a30303;
+    border-radius: 20px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
 .centradoN{
-    display: flex;
+    display:inline-block;
     background-color: #a30303;
     margin-top: 5em;
     position: relative;
@@ -286,7 +289,6 @@ td,th{
     padding-left: 0.5em;
     padding-right: 0.5em;
     transform: translate(-50%, -50%);
-    margin-bottom: 0.1em;
     border-radius: 20px;
 }
 
@@ -294,4 +296,12 @@ td,th{
     max-width: 100%;
     width: 90%;
     margin: 0 auto;
+}
+
+.checkbox:checked{
+    background-color: #a30303;
+    border:none;
+}
+.imagenD{
+    background: -webkit-gradient(linear, top, rgba(0,0,0,0.5), rgba(200,20,200,0.5)),url('../images/areaHero.jpg');
 }
