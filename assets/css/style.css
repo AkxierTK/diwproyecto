@@ -13,16 +13,13 @@
 *{
   margin:0px; 
   padding: 0px; 
+  box-sizing: border-box;
 }
 body{
-    box-sizing: border-box;
-    background-color:black ;
+    background-image: url("../images/fondoContacto.jpg");
     overflow-x:hidden;
 }
-.bodyContacto{
-    background-image: url("ass");
-    background-image: url("../images/fondoContacto.jpg");
-}
+
 
 h1,h2,h3,h4,h5,h6{ 
     font-family:'Evogria';
@@ -64,21 +61,31 @@ article{
     padding-top: 2em;
     padding-bottom: 2em;
 }
-input{
-    margin-left: 1.5em;
-}
+
 /*Aside*/
 aside{
+    padding-left: 2em;
+    padding-right: 2em;
     background-color: rgb(216, 132, 35);
     color:black;
     float: left;
-    margin: 1.5em;
+    margin-right: 1.5em;
     width: 22%;
     border-radius:5px;
     border: solid 3px white;
 }
-aside> a:visited{
-    color: green;
+
+section{
+    float:left;
+    width:70%;
+    background-color: var(--colorPC);
+    border:3px solid white;   
+    padding-left: 2em;
+    padding-right: 2em;
+
+}
+section>article>iframe{
+    align-self: center;
 }
 
 td,th{
@@ -91,12 +98,15 @@ form{
     border: var(--colorPC) 5px solid;
     background-color: grey;
     padding: 60px;
-    max-width: 400px;
+    max-width: 600px;
     margin: 0 auto;
     margin-bottom: 3em;
+    float: center;
 }
 form> textarea{
     resize:none;
+    border: solid 2px var(--colorPC);
+    border-radius: 5px;
 }
 .buttonF {
 	display: block;
@@ -115,15 +125,23 @@ label{
     color:white;
     margin-bottom: 1em;
     display: block;
+    text-shadow: 3px 3px 2px black;
 }
 input{
+    margin-left: 1em;
     margin-bottom: 1em;
+    height: 2em;
+    border: solid 2px var(--colorPC);
+    border-radius: 5px;
+
 }
 .bloqueCheck{
     margin-top: 1em;
     margin-bottom: 1em;
     font-size: 0.8em;
     vertical-align: middle;
+
+
 }
 
 
@@ -189,8 +207,15 @@ td,th{
     list-style:none;
     text-align: center;
     font-family: 'Oswald', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.25em;
 }
+.listaA>li>a{
+    color:white;
+}
+.listaA:visited{
+    color:var(--colorPC);
+}
+
 .linkCompra{
     color:rgb(216, 132, 35)
 }
@@ -198,12 +223,13 @@ td,th{
     text-align: center;
     font-family:'Evogria';
     src: url('../webfonts/Evogria.otf');
-    font-size: 2.5em;
+    font-size: 2em;
     margin-top: 1em;
     margin-right: 1em;
     margin-bottom: 0.5em; 
     margin-left: 0.5em;
     color:white; 
+    text-shadow: 3px 3px 2px black;
 }
 
 .navegador{
@@ -259,12 +285,12 @@ td,th{
     text-decoration: none;
     padding: 0 12px;
     margin: 0 20px;
-  }
+}
   
-  .link-footer:active{
+.link-footer:active{
       color:rgb(216, 132, 35) ;
-    }
-    .imagen-footer{
+}
+.imagen-footer{
         align-items: center;
         text-decoration: none;
         padding: 0 10px;
@@ -272,7 +298,7 @@ td,th{
         display:inline-block;
         top: 0.22em;
         left: 100%;
-    }
+}
     
 .indexH2{
     text-align: center;
@@ -297,6 +323,8 @@ td,th{
     display: inline-block;
     text-align: center;
     margin-top: 0px;
+    width: 100%;
+    height: 100%;
 }
 .areahero{
     box-shadow: 5px 40px 31px -26px rgba(0,0,0,1);
@@ -316,19 +344,17 @@ td,th{
     border: solid 3px white;
 }
 .articulos{
-    padding: 5em;
-    margin: 5em;
+    padding-left: 1em;
     margin-top: 2.5em;
     margin-bottom: 2.5em;
     padding-top: 2em;
     align-items: center;
     text-align: justify;
   /* IMPORTANTE */
-    display: inline-block;
-    background-color: var(--colorPC);
+    overflow: hidden;
     border-radius: 20px;
     list-style:none;
-    border:3px solid white;   
+
 }
 
 
@@ -345,7 +371,7 @@ td,th{
     border: solid white 3px;
 }
 .divDisplay{
-    padding-top: 0.5em;
+    padding-top:1em;
     background-color: var(--colorPC);
     padding-left: 0.5em;
     padding-right: 0.5em;
@@ -354,29 +380,24 @@ td,th{
     margin-bottom: 3em;
     margin-top: 1em;
     line-height: 2.5em;
-    width: 480px; 
+    width: 500px; 
     text-align: center;
     border:3px solid white;
 }
 .divDisplayPRO{
     padding: 0.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     background-color: rgb(216, 132, 35) ;
     border-radius: 20px; 
     margin-bottom: 2em;
     margin-top: 1em;
     line-height: 2.5em;
-    width: 550px; 
+    width: 600px; 
     text-align: center;
     border:3px solid white;
 }
-.divDisplay>h2{
-    color:white;
-    text-decoration: underline;
-}
-.divDisplayPRO>h2{
-    color:white;
-    text-decoration: underline;
-}
+
 
 .contenedoresDis{
   display: flex;
@@ -386,7 +407,12 @@ td,th{
 .iconowhatsapp{
     position: fixed;
     right: 1%;
-    top:86%;
+    top:85%;
+    transition: 0.5s linear;
+}
+.iconowhatsapp:hover{
+
+transform: rotate(360deg);
 }
 
 .contenedorCentrado{
@@ -401,6 +427,22 @@ td,th{
     border:none;
 }
 
+img:not([alt]){
+    border: 1px solid red;
+}
+a[href$=".pdf"]:after 
+{
+    margin-top: 1em;
+    content: "";
+    background-image:url(../images/pdf.png);
+    background-size: 100% 100%;
+    display: inline-block;
+  
+    /*size of your image*/
+    height: 25px;
+    width:25px;
+}
+  
 /*Prueba */
 
 .shop
@@ -437,8 +479,6 @@ td,th{
 {
     transform: scale(1);
     background: #E30000;
-    background: -moz-linear-gradient(45deg, #E30000 0%, #E04216 34%, #E3840E 100%);
-    background: -webkit-linear-gradient(45deg, #E30000 0%, #E04216 34%, #E3840E 100%);
     background: linear-gradient(45deg, #E30000 0%, #E04216 34%, #E3840E 100%);
     background-size: cover;
     transition: 0.3s ease transform;
@@ -448,8 +488,6 @@ td,th{
 .shop:after
 {   
     background: #E30000;
-    background: -moz-linear-gradient(45deg, #E30000 0%, #E04216 34%, #E3840E 100%);
-    background: -webkit-linear-gradient(45deg, #E30000 0%, #E04216 34%, #E3840E 100%);
     background: linear-gradient(45deg, #E30000 0%, #E04216 34%, #E3840E 100%);
     opacity: 0.16;
     z-index: 2;
@@ -543,6 +581,10 @@ td,th{
   font-family: "Evogria";
 }
 
+.sombraT{
+    text-shadow: 3px 3px 2px black;
+}
+
 .epicT{
 	
         /* Text Background Effect */
@@ -553,12 +595,60 @@ td,th{
     
         /* Other */
         
-        font-size: 100px;
+        font-size: 50px;
         font-weight: 900;
-        animation: dynamic 10s infinite alternate linear;
+        -webkit-animation: dynamic 10s infinite alternate linear;
+                animation: dynamic 10s infinite alternate linear;
         white-space: nowrap;
+
         
     }
+    .epicTS{
+    
+        /* Text Background Effect */
+        
+        background: url('../images/fuentefoto.jpg');
+        -webkit-background-clip: text;
+        color: transparent;
+    
+        /* Other */
+        
+        font-size: 30px;
+        font-weight: 900;
+        -webkit-animation: dynamic 10s infinite alternate linear;
+                animation: dynamic 10s infinite alternate linear;
+        white-space: nowrap;
+
+        
+    }
+    .epicTSP{
+    
+        /* Text Background Effect */
+        
+        background: url('../images/iphone-se-red-wallpaper.jpg');
+        -webkit-background-clip: text;
+        color: transparent;
+    
+        /* Other */
+        
+        font-size: 30px;
+        font-weight: 900;
+        -webkit-animation: dynamic 10s infinite alternate linear;
+                animation: dynamic 10s infinite alternate linear;
+        white-space: nowrap;
+
+        
+    }
+
+
+    @-webkit-keyframes slice {
+	
+        0% {	line-height: 0%; }
+        
+        100% {	line-height: 100%; }
+        
+    }
+
 
     @keyframes slice {
 	
@@ -569,6 +659,14 @@ td,th{
     }
     
     /* Dynamic Background Animation */
+    
+    @-webkit-keyframes dynamic {
+        
+        0% {	background-position: 0% }
+        
+        100% {	background-position: 100%; }
+        
+    }
     
     @keyframes dynamic {
         
