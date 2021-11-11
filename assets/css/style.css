@@ -9,7 +9,7 @@
 :root{
     --colorPC: #a30303;
 }
-/*Etiquetas*/
+/**********************Etiquetas estandar**********************/
 *{
   margin:0px; 
   padding: 0px; 
@@ -35,6 +35,78 @@ h2{
 h3{
     font-size: 1.5em;
 }
+cite,em,p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    margin:1em;
+    color:white;
+    line-height: 1.8em;
+}
+/**********************Blog**********************/
+article{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    border-bottom: 3px solid white;
+}
+section{
+    float:left;
+    width:70%;
+    background-color: var(--colorPC);
+    border:3px solid white;   
+    padding-left: 2em;
+    padding-right: 2em;
+
+}
+/**********************Aside**********************/
+aside{
+    padding-left: 2em;
+    padding-right: 2em;
+    background-color: rgb(216, 132, 35);
+    color:black;
+    float: left;
+    margin-right: 1.5em;
+    width: 22%;
+    border-radius:5px;
+    border: solid 3px white;
+}
+.listaAside{
+    list-style-image: url("../images/logo_small_icon_only_inverted.png");
+    color:white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.25em;
+    margin-left: 0.1em;
+}
+.listaAside>li>a{
+    color:white;
+}
+.listaAside:visited{
+    color:var(--colorPC);
+}
+.H2Aside{
+    text-align: center;
+    font-family:'Evogria';
+    font-size: 2em;
+    margin-top: 1em;
+    margin-right: 1em;
+    margin-bottom: 0.5em; 
+    margin-left: 0.5em;
+    color:white; 
+    text-shadow: 3px 3px 2px black;
+}
+/**********************Formulario **********************/
+form{
+    border: var(--colorPC) 5px solid;
+    background-color: grey;
+    padding: 60px;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 3em;
+}
+form> textarea{
+    resize:none;
+    border: solid 2px var(--colorPC);
+    border-radius: 5px;
+}
 .tituloForm{
     display: inline-flex;
     background-color: var(--colorPC);
@@ -50,74 +122,6 @@ h3{
     border:3px solid white;
 }
 
-cite,em,p{
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.2em;
-    margin:1em;
-    color:white;
-    line-height: 1.8em;
-}
-article{
-    padding-top: 2em;
-    padding-bottom: 2em;
-}
-
-/*Aside*/
-aside{
-    padding-left: 2em;
-    padding-right: 2em;
-    background-color: rgb(216, 132, 35);
-    color:black;
-    float: left;
-    margin-right: 1.5em;
-    width: 22%;
-    border-radius:5px;
-    border: solid 3px white;
-}
-
-section{
-    float:left;
-    width:70%;
-    background-color: var(--colorPC);
-    border:3px solid white;   
-    padding-left: 2em;
-    padding-right: 2em;
-
-}
-section>article>iframe{
-    align-self: center;
-}
-
-td,th{
-    color:white;
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.2em;
-}
-/*Formulario */
-form{
-    border: var(--colorPC) 5px solid;
-    background-color: grey;
-    padding: 60px;
-    max-width: 600px;
-    margin: 0 auto;
-    margin-bottom: 3em;
-    float: center;
-}
-form> textarea{
-    resize:none;
-    border: solid 2px var(--colorPC);
-    border-radius: 5px;
-}
-.buttonF {
-	display: block;
-	background-color: var(--colorPC);
-	padding: 5px 30px 5px 30px;
-    margin-bottom: 10px;
-	border: 0;
-	font-size: 1em; 
-	color: 	white;
-  font-family: "Evogria";
-}
 label{
     font-family: "Evogria";
     font-size: 1.5em;
@@ -135,31 +139,76 @@ input{
     border-radius: 5px;
 
 }
+
+.buttonF {
+	display: block;
+	background-color: var(--colorPC);
+	padding: 5px 30px 5px 30px;
+    margin-bottom: 10px;
+	border: 0;
+	font-size: 1em; 
+	color: 	white;
+  font-family: "Evogria";
+}
 .bloqueCheck{
     margin-top: 1em;
     margin-bottom: 1em;
     font-size: 0.8em;
     vertical-align: middle;
-
-
 }
-
-
 .chechText{
     font-size: 1.2em;
     display: inline;
 }
-nav {
-    padding: 7px;
-    text-align: right;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
-  }
-
 input#color{
     color:white;
     font-family: 'Oswald', sans-serif;
     font-size: 1.5em;
   }
+.checkbox:checked{
+    background-color: var(--colorPC);
+    border:none;
+}
+/**********************navegador**********************/
+nav {
+    padding: 7px;
+    text-align: right;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  }
+.navegador{
+    height: 100%;
+    background: var(--colorPC);
+    width: 100%;
+    box-shadow: 5px 10px 15px -10px white;
+}
+.menu{
+    height: 20px;
+}
+.logo{
+    position:absolute;
+    left:0%;
+    top:0.15%
+}
+/*********************footer**************************/
+.footerNav{
+    height: 100%;
+    background: grey;
+    top: 0px;
+    width: 100%;
+    right: 0%;
+    display: flex;
+    justify-content: space-between;
+}
+.imagen-footer{
+    align-items: center;
+    text-decoration: none;
+    padding: 0 10px;
+    margin: 0 4px;
+    display:inline-block;
+    top: 0.22em;
+    left: 100%;
+}
+/***********************tabla*****************************/
 table{
     margin: auto;
     border-collapse: collapse;
@@ -169,7 +218,7 @@ table{
     text-align: center;
     border: 3px solid white;
     white-space:nowrap;
-	height: 300px;
+    height: 300px;
 }
 table>caption{
     color:white;   
@@ -193,56 +242,20 @@ td,th{
     font-size: 1.2em;
 }
 
-/* Clases */
+/******************lista*****************/
 .lista{
     color:white;
     list-style:none;
-    padding-left: -3em;
     font-family: 'Oswald', sans-serif;
     font-size: 1.5em;
     text-align: center;
 }
-.listaA{
-    color:white;
-    list-style:none;
-    text-align: center;
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.25em;
-}
-.listaA>li>a{
-    color:white;
-}
-.listaA:visited{
-    color:var(--colorPC);
-}
 
+/******************links************************/
 .linkCompra{
     color:rgb(216, 132, 35)
 }
-.H2Aside{
-    text-align: center;
-    font-family:'Evogria';
-    src: url('../webfonts/Evogria.otf');
-    font-size: 2em;
-    margin-top: 1em;
-    margin-right: 1em;
-    margin-bottom: 0.5em; 
-    margin-left: 0.5em;
-    color:white; 
-    text-shadow: 3px 3px 2px black;
-}
-
-.navegador{
-    height: 100%;
-    background: var(--colorPC);
-    position: top;
-    width: 100%;
-   box-shadow: 5px 10px 15px -10px white;
-}
-.menu{
-    height: 20px;
-}
-
+/*link de nav*/
 .link-3 {
     font-family: 'Oswald', sans-serif;
     align-items: center;
@@ -260,20 +273,6 @@ td,th{
     padding-top: 0.42%;
     padding-bottom: 0.42%;
   }
-.logo{
-    position:absolute;
-    left:0%;
-    top:0.15%
-}
-.footerNav{
-    height: 100%;
-    background: grey;
-    top: 0px;
-    width: 100%;
-    right: 0%;
-    display: flex;
-    justify-content: space-between;
-}
 
 .link-footer {
     font-family: 'Oswald', sans-serif;
@@ -290,22 +289,12 @@ td,th{
 .link-footer:active{
       color:rgb(216, 132, 35) ;
 }
-.imagen-footer{
-        align-items: center;
-        text-decoration: none;
-        padding: 0 10px;
-        margin: 0 4px;
-        display:inline-block;
-        top: 0.22em;
-        left: 100%;
-}
-    
-.indexH2{
-    text-align: center;
-}
+/*************Contenedores********************/
+/*contenedor de index*/
 .divPadreIndex{
     text-align: center;
 }
+/*contenedor index videp*/
 .cajaRoja{
   
     padding: 15px;
@@ -317,7 +306,7 @@ td,th{
   display: inline-block;
   box-shadow: 10px 10px 124px 20px rgba(163,3,3,0.95);
 }
-
+/*contenedorAreaHero*/
 .contenedor{
     position: relative;
     display: inline-block;
@@ -326,12 +315,7 @@ td,th{
     width: 100%;
     height: 100%;
 }
-.areahero{
-    box-shadow: 5px 40px 31px -26px rgba(0,0,0,1);
-    -webkit-box-shadow: 5px 40px 31px -26px rgba(0,0,0,1);
-    -moz-box-shadow: 5px 40px 31px -26px rgba(0,0,0,1);
-}
-
+/*contenedor h1 index*/
 .centrado{
     position: absolute;
     top: 10%;
@@ -343,6 +327,7 @@ td,th{
     padding-right: 0.5em;
     border: solid 3px white;
 }
+/*contenedor de los articulos*/
 .articulos{
     padding-left: 1em;
     margin-top: 2.5em;
@@ -350,14 +335,11 @@ td,th{
     padding-top: 2em;
     align-items: center;
     text-align: justify;
-  /* IMPORTANTE */
     overflow: hidden;
     border-radius: 20px;
     list-style:none;
-
 }
-
-
+/*contenedor de contacto extra*/
 .centradoN{
     display:inline-block;
     background-color: var(--colorPC);
@@ -370,17 +352,22 @@ td,th{
     border-radius: 20px;
     border: solid white 3px;
 }
+/*contenedor iframes*/
+.centradoI{
+   text-align: center;
+}
+/*contenedores flex de servicios*/
 .divDisplay{
     padding-top:1em;
     background-color: var(--colorPC);
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
     padding-bottom: 1em;
     border-radius: 20px; 
     margin-bottom: 3em;
     margin-top: 1em;
     line-height: 2.5em;
-    width: 500px; 
+    width: 510px; 
     text-align: center;
     border:3px solid white;
 }
@@ -397,13 +384,35 @@ td,th{
     text-align: center;
     border:3px solid white;
 }
-
-
 .contenedoresDis{
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
 }
+/*contenedor del scroll de blog*/
+.scroll {
+    border:2px solid white;
+    border-radius: 5px;
+    background-color:  rgb(216, 132, 35) ;
+    width: 150px;
+    height: 150px;
+    overflow: scroll;
+  }
+/*contenedor que centra la servicios*/
+.contenedorCentrado{
+      max-width: 100%;
+      align-items: center;
+      align-content: center;
+      margin: 0 auto;
+  }
+/*diseño areaHero*/
+.areahero{
+    box-shadow: 5px 40px 31px -26px rgba(0,0,0,1);
+    -webkit-box-shadow: 5px 40px 31px -26px rgba(0,0,0,1);
+    -moz-box-shadow: 5px 40px 31px -26px rgba(0,0,0,1);
+}
+
+/***************whatsapp*********************/
 .iconowhatsapp{
     position: fixed;
     right: 1%;
@@ -415,21 +424,12 @@ td,th{
 transform: rotate(360deg);
 }
 
-.contenedorCentrado{
-    max-width: 100%;
-    align-items: center;
-    align-content: center;
-    margin: 0 auto;
-}
-
-.checkbox:checked{
-    background-color: var(--colorPC);
-    border:none;
-}
+/*********Imagenes sin alt****************/
 
 img:not([alt]){
     border: 1px solid red;
 }
+/**********icono pdf****************/
 a[href$=".pdf"]:after 
 {
     margin-top: 1em;
@@ -443,7 +443,7 @@ a[href$=".pdf"]:after
     width:25px;
 }
   
-/*Prueba */
+/**************boton tienda ***************************/
 
 .shop
 {
@@ -506,11 +506,11 @@ a[href$=".pdf"]:after
 .shop div:before, .shop div:after
 {
     position: absolute;
-    top: 0;
+    top: 3px;
     right: 0;
     left: 0;
     color: #fff;
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: "Evogria";
     font-weight: bold;
     line-height: 1;
@@ -570,21 +570,12 @@ a[href$=".pdf"]:after
     opacity: 1;
     transform: scale(1);
 }
-.buttonF {
-	display: block;
-	background-color: var(--colorPC);
-	padding: 5px 30px 5px 30px;
-    margin-bottom: 10px;
-	border: 0;
-	font-size: 1em; 
-	color: 	white;
-  font-family: "Evogria";
-}
 
+/***********Sombra de texto**************/
 .sombraT{
     text-shadow: 3px 3px 2px black;
 }
-
+/************Texto animado ******************/
 .epicT{
 	
         /* Text Background Effect */
@@ -675,3 +666,22 @@ a[href$=".pdf"]:after
         100% {	background-position: 100%; }
         
     }
+
+/*************** Media queries *****************************/
+@media screen and (max-width: 1024px) {
+    .centrado>h1{
+        font-size:2.5em;
+    }
+    .tituloForm{
+        font-size: 2.5em;
+    }
+    .contenedorCentrado{
+        max-width: 80%;
+    }
+    .table{
+        overflow: scroll;
+    }
+}
+@media screen and (max-width: 480px) {
+
+}
