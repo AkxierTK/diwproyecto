@@ -242,6 +242,10 @@ td,th{
     font-size: 1.2em;
 }
 
+.esconder{
+    /*en la media querie sera none */
+}
+
 /******************lista*****************/
 .lista{
     color:white;
@@ -410,6 +414,10 @@ td,th{
     box-shadow: 5px 40px 31px -26px rgba(0,0,0,1);
     -webkit-box-shadow: 5px 40px 31px -26px rgba(0,0,0,1);
     -moz-box-shadow: 5px 40px 31px -26px rgba(0,0,0,1);
+}
+
+.scrollT{
+
 }
 
 /***************whatsapp*********************/
@@ -669,6 +677,11 @@ a[href$=".pdf"]:after
 
 /*************** Media queries *****************************/
 @media screen and (max-width: 1024px) {
+    .link-3:hover {
+       
+        padding-top: 0.7%;
+        padding-bottom: 0.7%;
+      }
     .centrado>h1{
         font-size:2.5em;
     }
@@ -676,11 +689,37 @@ a[href$=".pdf"]:after
         font-size: 2.5em;
     }
     .contenedorCentrado{
-        max-width: 80%;
+        max-width: 100%
     }
-    .table{
-        overflow: scroll;
+    .scrollT{
+        margin: 0 auto;
+        max-width: 90%;
+        align-items: center;
+        align-content: center;
+        margin: 0 auto;
+        overflow-x: scroll;
     }
+    /*
+    .esconder{
+        display:none;
+    }
+    */
+    .contenedoresDis{
+        flex-wrap:wrap;
+        justify-content: center;
+      }
+      .iconowhatsapp{
+        position: fixed;
+        right: 0.25%;
+        top:85%;
+        transition: 0.5s linear;
+    }
+  .epicT{
+      font-size:30px;
+}
+.H2Aside{
+    font-size: 1.5em;
+}
 }
 @media screen and (max-width: 480px) {
 
