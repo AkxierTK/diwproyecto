@@ -450,7 +450,13 @@ a[href$=".pdf"]:after
     height: 25px;
     width:25px;
 }
-  
+/******************Iframes ***************************/
+.videoPC{
+
+}
+.videoMov{
+    display: none;
+}
 /**************boton tienda ***************************/
 
 .shop
@@ -711,7 +717,7 @@ a[href$=".pdf"]:after
       .iconowhatsapp{
         position: fixed;
         right: 0.25%;
-        top:85%;
+        top:80%;
         transition: 0.5s linear;
     }
   .epicT{
@@ -721,6 +727,120 @@ a[href$=".pdf"]:after
     font-size: 1.5em;
 }
 }
-@media screen and (max-width: 480px) {
 
+@media screen and (max-width: 720px) {
+    .centrado>h1{
+        font-size:1.75em;
+    }
+    .tituloForm{
+        font-size:1.75em;
+    }
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .centrado>h1{
+        font-size:1.2em;
+    }
+    .navegador{
+        padding-top: 3em;
+    }
+    .navegador>.logo{
+        left:30%;
+    
+    }
+    .navegador>a{
+    display:flex;
+    }
+    .link-3:hover {
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-left: 0em;
+    margin-right: 0em;
+    }
+    .tituloForm{
+        font-size: 1.2em;
+    }
+    .videoPC{
+        display: none;
+    }
+    .videoMov{
+        display: block;
+    }
+    .iconowhatsapp{
+        display: none;
+    }
+    .divDisplay{
+        width: 410px;
+    }
+    .divDisplay>h4{
+        font-size: 0.80em;
+    }
+    .divDisplayPRO{
+        width: 420px;
+    }
+    .divDisplayPRO>h4{
+        font-size: 0.73em;
+    }
+    .articulos{
+        width: 100%;
+        margin-top: 1em;
+        display: block;
+    }
+    aside{
+        width: 80%;
+        margin-bottom: 1em;
+        display: block;  
+        margin-left: 3em;
+    }
+    .listaAside{
+        font-size: 1em;
+    }
+    section{
+        width: 95%;
+        margin-bottom: 1em;
+        display: block;
+        margin-left: 0.5em;
+    }
+    .H2Aside{
+        font-size: 1.2em;
+    }
+    form{
+        max-width: 400px;
+        
+    }
+    form> textarea{
+       width: 300px;
+    }
+    .bloqueCheck{
+        font-size: 0.56em;
+    }
+    em{
+        font-size: 1em;
+    }
+    article>h3{
+        font-size: 1em;
+    }
+    .epicT{
+        font-size: 1.1em;
+    }
+    .articulos>section>article>p{
+        font-size: 1em;
+    }
+    .centradoN{
+        margin-top: 8em;
+        width: 90%;
+    }
+    table>caption{
+        font-size: 1.5em;
+    }
+    .esconder{
+        display:none;
+    }
+    .scrollT{
+        overflow: hidden;
+    }
 }
