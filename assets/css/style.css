@@ -457,6 +457,9 @@ a[href$=".pdf"]:after
 .videoMov{
     display: none;
 }
+.iframeBM{
+    display: none;
+}
 /**************boton tienda ***************************/
 
 .shop
@@ -705,14 +708,13 @@ a[href$=".pdf"]:after
         margin: 0 auto;
         overflow-x: scroll;
     }
-    /*
-    .esconder{
-        display:none;
-    }
-    */
     .contenedoresDis{
         flex-wrap:wrap;
         justify-content: center;
+      }
+      .divDisplay{
+          margin-left: 1em;
+          width: 600px;
       }
       .iconowhatsapp{
         position: fixed;
@@ -726,43 +728,17 @@ a[href$=".pdf"]:after
 .H2Aside{
     font-size: 1.5em;
 }
+.iframeBM{
+    display: none;
+}
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
     .centrado>h1{
         font-size:1.75em;
     }
     .tituloForm{
         font-size:1.75em;
-    }
-}
-
-
-
-@media screen and (max-width: 480px) {
-    .centrado>h1{
-        font-size:1.2em;
-    }
-    .navegador{
-        padding-top: 3em;
-    }
-    .navegador>.logo{
-        left:30%;
-    
-    }
-    .navegador>a{
-    display:flex;
-    }
-    .link-3:hover {
-    padding-top: 0%;
-    padding-bottom: 0%;
-    padding-left: 10%;
-    padding-right: 10%;
-    margin-left: 0em;
-    margin-right: 0em;
-    }
-    .tituloForm{
-        font-size: 1.2em;
     }
     .videoPC{
         display: none;
@@ -774,13 +750,13 @@ a[href$=".pdf"]:after
         display: none;
     }
     .divDisplay{
-        width: 410px;
+        width: 420px;
     }
     .divDisplay>h4{
         font-size: 0.80em;
     }
     .divDisplayPRO{
-        width: 420px;
+        width: 440px;
     }
     .divDisplayPRO>h4{
         font-size: 0.73em;
@@ -791,10 +767,10 @@ a[href$=".pdf"]:after
         display: block;
     }
     aside{
-        width: 80%;
+        width: 40%;
         margin-bottom: 1em;
         display: block;  
-        margin-left: 3em;
+        margin-left: 14em;
     }
     .listaAside{
         font-size: 1em;
@@ -809,11 +785,11 @@ a[href$=".pdf"]:after
         font-size: 1.2em;
     }
     form{
-        max-width: 400px;
+        max-width: 500px;
         
     }
     form> textarea{
-       width: 300px;
+       width: 400px;
     }
     .bloqueCheck{
         font-size: 0.56em;
@@ -837,10 +813,80 @@ a[href$=".pdf"]:after
     table>caption{
         font-size: 1.5em;
     }
+    .scrollT{
+        overflow-x:scroll;
+    }
+    .link-footer {
+        padding: 0 6px;
+        margin: 0 10px;
+    }
+    .link-3:hover {
+       
+        padding-top: 0.9%;
+        padding-bottom: 0.9%;
+      }
+    
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .centrado>h1{
+        font-size:1.1em;
+    }
+    .navegador{
+        padding-top: 3em;
+    }
+    .navegador>.logo{
+        left:30%;
+    
+    }
+    .navegador>a{
+    display:flex;
+    }
+    .link-3:hover {
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-left: 0em;
+    margin-right: 0em;
+    }
+    .tituloForm{
+        font-size: 1.1em;
+    }
+    aside{
+        width: 50%;
+        margin-bottom: 1em;
+        display: block;  
+        margin-left: 6.5em;
+    }
+    form{
+        max-width: 400px;
+        
+    }
+    form> textarea{
+       width: 300px;
+    }
     .esconder{
         display:none;
     }
     .scrollT{
         overflow: hidden;
+    }
+    .iframeBM{
+        display: block;
+    }
+    .iframeB{
+        display: none;
+    }
+    .divDisplay{
+        width: 420px;
+    }
+    .videoPC{
+        display: none;
+    }
+    .videoMov{
+        display: block;
     }
 }
